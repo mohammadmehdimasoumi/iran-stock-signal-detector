@@ -14,7 +14,10 @@ SYMBOLS = [
 FEATURES = [
     "rsi", "macd", "macd_signal",
     "bb_upper", "bb_lower",
-    "sma_20", "sma_50"
+    "sma_20", "sma_50",
+    "volume_ratio", "momentum_5", "momentum_10",
+    "prev_day_change", "dist_from_high", "dist_from_low",
+    "price_to_sma20", "price_to_sma50"
 ]
 
 def load_all_data():
