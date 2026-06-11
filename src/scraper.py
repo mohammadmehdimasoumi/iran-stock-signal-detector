@@ -25,6 +25,11 @@ def download_data():
                 write_to_csv=True,
                 base_path="data/raw"
             )
+            # rename فارسی به انگلیسی
+            fa_path = f"data/raw/{fa_symbol}.csv"
+            eng_path = f"data/raw/{eng_name}.csv"
+            if os.path.exists(fa_path):
+                os.rename(fa_path, eng_path)
             print(f"[OK] {eng_name} saved")
         except Exception as e:
             print(f"[ERROR] {eng_name}: {e}")
